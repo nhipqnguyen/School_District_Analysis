@@ -1,57 +1,82 @@
 # School District Analysis
 # Project Overview
-A Colorado Board of Elections has given us the following tasks to complete the election audit of a recent local congressional election.
+The Chief Data Scientist for the PyCity School District has given us the tasks to help make strategic decisions regarding future school budgets and priorities based on the standardized test scores and current school funding.
 
-1. Calculate the total number of votes cast.
-2. Get a complete list of candidates who received votes.
-3. Calculate the total number of votes each candidate received.
-4. Calculate the percentage of votes each candidate won.
-5. Determine the winner of the election based on popular vote.
+1. Generate the school district summary.
+2. Generate the school summary.
+3. Determine top 5 and bottom 5 performing schools based on the pverall passing rate .
+4. Calculate average Math and Reading Scores by grade.
+5. Group scores by school spending per Student.
+6. Group scores by school size.
+7. Group scores by school type.
 
 ## Challenge Overview
-After getting the results of the election, the election commission would like some additional data to complete the audit. Our additional tasks are:
-
-6. Get a complete list of counties where voters were from.
-8. Calculate the voter turnout for each county
-9. Calculate the percentage of votes from each counties out of the total count.
-10. Determine the county with the higest turnout.
+After we generate the needed information, the school board has notified us that the provided students' scores data file shows evidence of academic dishonesty; specifically, reading and math grades for Thomas High School ninth graders. Therefore, we have been asked to replace the math and reading scores for Thomas High School ninth graders with NaNs while keeping the rest of the data intact, then repeat the school district analysis with the updated dataset. 
 
 ## Resources
 - Data Source: schools_complete.csv and students_complete.csv
 - Software: Anaconda 4.10.1, Jupyter Notebook.
 
 ## School District Analysis Results
-Below is a screeenshot of the results text file after running our Python script:
+- Below are the screeenshots of the original and updated district summaries:
 
-![Results Text File](https://github.com/nhipqnguyen/election_analysis/blob/main/analysis/election_analysis_screenshot.png)
+  - ![Original District Summary](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/original_district_summary.png)
 
-The analysis of the election shows that:
-- There were 369,711 votes cast in this congressional election.
-- The voters were from 3 counties and here is the number and percentage of votes for each county:
-  - 10.5% of the votes and 38,855 number of votes were from Jefferson County.
-  - 82.8% of the votes and 306,055 number of votes were from Denver County.
-  - 6.7% of the votes and 24,801 number of votes were from Arapahoe County.
-- The county that had the largest number of votes was: Denver County.
-- The candidates were:
-  - Charles Casper Stockham
-  - Diana DeGette
-  - Raymon Anthony Doane
-- The candidate results were:
-  - Charles Casper Stockham received 23.0% of the vote and 85,213 number of votes.
-  - Diana DeGette received 73.8% of the vote and 272,892 number of votes.
-  - Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes.
-- The winner of the election was:
-  - Diana DeGette who received 73.8% of the vote and 272,892 number of votes.
+  - ![Updated District Summary](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/updated_district_summary.png)
+
+  - We can see that while the average reading scores remain unchanged, the average math score goes down by 0.1, the passing math percentage goes down by 0.2, the passing reading perentage goes down by 0.3, and the overall passing percentage goes down by 0.1.
+
+- Below are the screeenshots of the original and updated school summaries:
+
+  - ![Original School Summary](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/original_school_summary.png)
+
+  - ![Updated School Summary](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/updated_school_summary.png)
+  
+  - While the figures for other schools remain unchanged, Thomas High School's figures have some changes. After the change we made to the dataset, its average math score and passing math percentage go down by approximately 0.07 and 0.09. While its average reading score go up by approximately 0.05, its passing reading percentage goes down by approximately 0.3. Its overall passing percentage goes down by approximately 0.3.
+
+- Below are the screeenshots of the original and updated math scores by grade:
+
+  - ![Original Math Scores by Grade](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/original_math_scores_by_grade.png)
+
+  - ![Updated Math Scores by Grade](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/updated_math_scores_by_grade.png)
+
+  - Except for Thomas High School nith graders average math score, which became NaN,  math scores for other schools remain unchanged.
+
+- Below are the screeenshots of the original and updated reading scores by grade:
+
+  - ![Original Reading Scores by Grade](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/original_reading_scores_by_grade.png)
+
+  - ![Updated Reading Scores by Grade](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/updated_reading_scores_by_grade.png)
+
+  - Simialr to math scores by grade, except for Thomas High School nith graders average reading score, which became NaN, reading scores for other schools remain unchanged.
+
+
+- Below are the screeenshots of the original and updated scores by school spending (per student):
+
+  - ![Original Scores by School Spending](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/original_scores_by_school_spending.png)
+
+  - ![Updated Scores by School Spending](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/updated_scores_by_school_spending.png)
+
+  - While the average math and reading scores for all spending groups remain unchanged, the passing math percentages for all groups go slightly up. The passing reading percentages of spending groups "<$548" and "$585-$629" go slightly down while those of the other 2 spending groups go slightly up. In contrast, the overall passing percentages of spending groups "<$548" and "$585-$629" both go up by 0.4 while those of the other 2 spending groups go down by 0.2 and 0.5.
+
+- Below are the screeenshots of the original and updated scores by school size:
+
+  - ![Original Scores by School Size](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/original_scores_by_school_size.png)
+
+  - ![Updated Scores by School Size](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/updated_scores_by_school_size.png)
+
+  - The average math and reading scores for all size groups remain unchanged.
+
+- Below are the screeenshots of the original and updated scores by school type:
+
+  - ![Original Scores by School Type](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/original_scores_by_school_type.png)
+
+  - ![Updated Scores by School Type](https://github.com/nhipqnguyen/School_District_Analysis/Analysis/updated_scores_by_school_type.png)
+
+  - The average math and reading scores for both groups remain unchanged.
+ 
 
 ## School District Analysis Summary
-To generate the results of this election, we've written a Python script that has the following function: 
-- It goes though each row in the given text file,
-  - gets the candidate name and puts it in a list of candidates if it's not already in there, then increments the vote count for that candidate by 1,
-  - gets the county name and puts it in a list of counties if it's not already in there, then increments the vote count for that county by 1,
-  - increments the total count of votes by 1.
-- Then it uses the vote count for each county and each candidate to calculate the percentage out of the total number of votes.
-- The last step is to determine the winner (the candidate with the most votes) and the county with the largest number of votes.
-
-With its function to read data from a text file, retrieve the important attributes, do mathematical calculations, and return the requested results, this script can be used to analyze not just this election, but any election. Here are 2 examples:
- - For a federal election by state or district, we can replace all the county variables in our current script to state or district variables.
- - For the U.S. Presidential election which is based on the Electoral College system, instead of determining the winner by the popular votes, we can modify the script to calculate the number of votes each candidate wins in a state, from there we decide whether the state is red or blue, then add the number of electoral votes of that state to the vote count of the winning candidate. We then calculate the percentage out of 538 electoral votes for each candidate and whoever has the higher percentage wins the election.
+After reading and math scores for the ninth graders at Thomas High School have been replaced with NaNs, we notice the following main changes:
+- Thomas High School's average math scores, math passing percentage, reading passing percentage, and overall passing percentage all go down. However, its average reading score goes up.
+- 
