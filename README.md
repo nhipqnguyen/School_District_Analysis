@@ -79,4 +79,6 @@ After we generate the needed information, the school board has notified us that 
 ## School District Analysis Summary
 After reading and math scores for the ninth graders at Thomas High School have been replaced with NaNs, we notice the following main changes:
 - Thomas High School's average math scores, math passing percentage, reading passing percentage, and overall passing percentage all go down. However, its average reading score goes up.
-- 
+- The change in Thomas High School math and reading scores lead to the decrease of all related numbers in the district summary.
+- There is no patterns in the changes of the passing rates of different spending groups. Some of the numbers go up and some go down.
+- There is no changes to the data of different school size groups and school type groups.
