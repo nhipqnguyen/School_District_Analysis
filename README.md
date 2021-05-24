@@ -48,7 +48,7 @@ After we generate the needed information, the school board has notified us that 
 
   ![Updated Reading Scores by Grade](https://github.com/nhipqnguyen/School_District_Analysis/blob/main/Analysis/updated_reading_scores_by_grade.png)
 
-  - Simialr to math scores by grade, except for Thomas High School nith graders average reading score, which became NaN, reading scores for other schools remain unchanged.
+  - Similar to math scores by grade, except for Thomas High School ninth graders average reading score, which became NaN, reading scores for other schools remain unchanged.
 
 
 - Below are the screeenshots of the original and updated scores by school spending (per student):
@@ -73,8 +73,7 @@ After we generate the needed information, the school board has notified us that 
 
   ![Updated Scores by School Type](https://github.com/nhipqnguyen/School_District_Analysis/blob/main/Analysis/updated_scores_by_school_type.png)
 
-  - The average math and reading scores for both groups remain unchanged.
- 
+  - The average math and reading scores for both groups remain unchanged. 
 
 ## School District Analysis Summary
 After reading and math scores for the ninth graders at Thomas High School have been replaced with NaNs, we notice the following main changes:
